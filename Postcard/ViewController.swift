@@ -27,6 +27,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func sendMessageButton(sender: UIButton) {
+        //Code will evaluate when we the press the button
+        //Adding a comment here to test commit
         labelHidden.hidden = false
         labelHidden.text = messageTextField.text
         labelHidden.textColor = UIColor.redColor()
