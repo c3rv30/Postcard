@@ -9,6 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var labelHidden: UILabel!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var messageTextField: UITextField!
+    @IBOutlet weak var mailButton: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +25,15 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    @IBAction func sendMessageButton(sender: UIButton) {
+        labelHidden.hidden = false
+        labelHidden.text = messageTextField.text
+        labelHidden.textColor = UIColor.redColor()
+        
+        messageTextField.text = ""
+        messageTextField.resignFirstResponder()
+        
+        mailButton.setTitle("Mail Sent", forState: UIControlState.Normal)
+    }
 }
-
