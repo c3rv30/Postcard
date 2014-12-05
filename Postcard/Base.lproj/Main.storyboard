@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eqT-xV-hJy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eqT-xV-hJy">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--Barcelona-->
@@ -103,6 +103,15 @@
                                     <action selector="sendMessageButton:" destination="WTA-Zd-n39" eventType="touchUpInside" id="u4D-Bo-m5z"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eu-dz-I21">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="208" width="178" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -112,6 +121,7 @@
                                 <exclude reference="9op-w3-kYJ"/>
                                 <exclude reference="AmD-kS-iVS"/>
                                 <exclude reference="T4P-a1-Jff"/>
+                                <exclude reference="0eu-dz-I21"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -121,6 +131,7 @@
                                 <include reference="9op-w3-kYJ"/>
                                 <include reference="AmD-kS-iVS"/>
                                 <include reference="T4P-a1-Jff"/>
+                                <include reference="0eu-dz-I21"/>
                             </mask>
                         </variation>
                     </view>
@@ -128,6 +139,7 @@
                         <outlet property="labelHidden" destination="mpb-Ox-sF9" id="BPz-2b-3eG"/>
                         <outlet property="mailButton" destination="T4P-a1-Jff" id="XAL-oY-glh"/>
                         <outlet property="messageTextField" destination="9op-w3-kYJ" id="ozl-fx-p5g"/>
+                        <outlet property="nameLabel" destination="0eu-dz-I21" id="1Zn-6E-yDG"/>
                         <outlet property="nameTextField" destination="6Rl-bX-t4t" id="tOt-yE-qWU"/>
                     </connections>
                 </viewController>
